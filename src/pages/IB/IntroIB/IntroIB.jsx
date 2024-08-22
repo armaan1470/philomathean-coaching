@@ -5,22 +5,21 @@ import ilust1 from "../../../assets/IB/Introdution to IB/2.png";
 import ilust2 from "../../../assets/IB/Introdution to IB/3.png";
 import ilust3 from "../../../assets/IB/Introdution to IB/1.png";
 import art1 from "../../../assets/images/dna.png";
-import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png";
 import art3 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
 import art4 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
 import "./IntroIB.css";
 import useAnimation from "../../../Hooks/useAnimation";
 
 const IntroIB = () => {
-
-  useAnimation("animation")
+  useAnimation("animation");
 
   return (
     <div className="main_container">
-      <img src={art1} alt="" className="icon1"/>
-      <img src={art2} alt="" className="icon2"/>
-      <img src={art3} alt="" className="icon4"/>
-      <img src={art4} alt="" className="icon5"/>
+      <img src={art1} alt="" className="icon1" />
+      <img src={art2} alt="" className="icon2" />
+      <img src={art3} alt="" className="icon4" />
+      <img src={art4} alt="" className="icon5" />
 
       <div className="banner b5">
         <div className="banner_content_area">
