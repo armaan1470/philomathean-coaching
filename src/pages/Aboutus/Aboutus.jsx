@@ -3,31 +3,15 @@ import "./Aboutus.css";
 import illustration4 from "../../assets/images/Illustration-4.png";
 import director from "../../assets/images/director image.jpg";
 import tut1 from "../../assets/images/Team-1.jpg";
-import tut2 from "../../assets/images/Team-2.jpg";
 import tut3 from "../../assets/images/Team-3.jpg";
-import tut4 from "../../assets/images/Team-4.jpg";
-import tut5 from "../../assets/images/Team-5.jpg";
+
 import mission from "../../assets/images/Our Mission.png";
 import vision from "../../assets/images/Our Vision.png";
 import mission_div from "../../assets/images/mission.png";
 import vision_div from "../../assets/images/vision.png";
-import avatar1 from "../../assets/images/Profile-1.png";
-import avatar2 from "../../assets/images/Profile-2.png";
-import avatar3 from "../../assets/images/Profile-3.png";
-import avatar4 from "../../assets/images/Profile-4.png";
-import avatar5 from "../../assets/images/Profile-5.png";
-import avatar6 from "../../assets/images/Profile-6.png";
-import stories1 from "../../assets/images/success stories-1.png";
-import stories2 from "../../assets/images/success stories-2.png";
-import stories3 from "../../assets/images/success stories-3.png";
-import stories4 from "../../assets/images/success stories-4.png";
-import stories5 from "../../assets/images/success stories-5.png";
-import stories6 from "../../assets/images/success stories-6.png";
+
 import logo from "../../assets/images/About US logo.png";
 
-import line from "../../assets/images/underline_about us.png";
-import Footer from "../../components/Footer/Footer";
-import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
 
 function Aboutus() {
@@ -105,16 +89,18 @@ function Aboutus() {
 
             <p className="hero_subtext">
               Established in 2016, Philomathean Career Institute started with a
-              handful of students, a few sessions old, the institute scaled new
-              heights of success by providing coaching for IB & IGCSE students V{" "}
-              <sup>th</sup> to X <sup>th</sup>
+              handful of students, in short time period, the institute scaled
+              new heights of success by providing coaching for IB & IGCSE
+              students MYP, AS & A Level, for Schools and Higher Education
+              Goals.
             </p>
 
             <p className="hero_subtext">
               New milestones were set each year and the institute achieved a
-              remarkable landmark with excellent results. Besides IB & IGCSE
-              students 5th to 10th, philomathean career institute brought
-              outstanding results in the International Olympiads as well.
+              remarkable landmark with excellent results. Besides IB & IGCSE ,
+              MYP , AS & A Levels students 5th to 10th, philomathean career
+              institute brought outstanding results in the International
+              Olympiads and Foundation Courses as well.
             </p>
 
             <p className="hero_subtext">
@@ -122,8 +108,8 @@ function Aboutus() {
               Abroad. Every year, our students get admission into top
               international universities. The institute has now become the
               preferred choice for students, who want to build a strong
-              foundation for their higher studies in Engineering & Medical, or
-              achieve top ranks in competitive exams or Study Abroad programs.
+              foundation for their higher studies in Academic Goals, or achieve
+              top ranks in competitive exams or Study Abroad programs.
             </p>
           </div>
         </div>

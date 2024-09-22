@@ -3,7 +3,7 @@ import ilust1 from "../../assets/asalevelscontent/1.png";
 import ilust2 from "../../assets/asalevelscontent/2.png";
 import logo from "../../assets/IGCSE Content/Subjects Offered at IGCSE/5.png";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import "./Aslevel.css"
+import "./Aslevel.css";
 
 const Aslevel = () => {
   return (
@@ -63,9 +63,8 @@ const Aslevel = () => {
               <li className="list-header flex-list">Mathematics</li>
               <li className="list-header flex-list">English</li>
               <li className="list-header flex-list">Chemistry</li>
-              <li className="list-header flex-list">Langauges</li>
-              <li className="list-header flex-list">History</li>
-              <li className="list-header flex-list">Geography</li>
+              <li className="list-header flex-list">Physics</li>
+              <li className="list-header flex-list">Biology</li>
             </ul>
           </div>
         </div>
@@ -75,7 +74,7 @@ const Aslevel = () => {
         <div className="igsce_content2">
           <div className="content-detail modified3">
             <div className="content_header2">
-                <h1>Learning Environment at Philomathean</h1>
+              <h1>Learning Environment at Philomathean</h1>
             </div>
             <p>
               At Philomathean Career Institute, subject experts focus on unique
@@ -83,28 +82,26 @@ const Aslevel = () => {
               it.
             </p>
             <ul className="subject-list mr-t">
-                <li className="list-header">At Philomathean We Provide</li>
-                <ul className="list-inner">
+              <li className="list-header">At Philomathean We Provide</li>
+              <ul className="list-inner">
                 <li>Individualized Attention</li>
-                    <li>Value-driven Classes</li>
-                    <li>Result-oriented Sessions</li>
-                    <li>Convenience for Students</li>
-                    <li>Cost-Effective</li>
-                    
-                </ul>
+                <li>Value-driven Classes</li>
+                <li>Result-oriented Sessions</li>
+                <li>Convenience for Students</li>
+                <li>Cost-Effective</li>
+              </ul>
             </ul>
 
             <ul className="subject-list mr-t">
-                <li className="list-header">Our Key Features</li>
-                <ul className="list-inner">
-                    <li>Flexible Timings</li>
-                    <li>Unique Teaching Methodology</li>
-                    <li>Experienced Subject Experts</li>
-                    <li>Highly Qualified Faculty</li>
-                    <li>Recent Resources</li>
-                </ul>
+              <li className="list-header">Our Key Features</li>
+              <ul className="list-inner">
+                <li>Flexible Timings</li>
+                <li>Unique Teaching Methodology</li>
+                <li>Experienced Subject Experts</li>
+                <li>Highly Qualified Faculty</li>
+                <li>Recent Resources</li>
+              </ul>
             </ul>
-
           </div>
         </div>
 

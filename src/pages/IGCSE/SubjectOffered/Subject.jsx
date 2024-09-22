@@ -15,7 +15,10 @@ const Subject = () => {
       <div className="banner b1">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
-            <div className="banner_heading">Subjects Offered<br/> in IGCSE</div>
+            <div className="banner_heading">
+              Subjects Offered
+              <br /> in IGCSE
+            </div>
           </div>
           <div className="banner_img_content_area">
             <img src={logo} alt="logo" className="banner_img_content" />
@@ -80,13 +83,6 @@ const Subject = () => {
                 <ul className="list-inner">
                   <li>Physics - 0625</li>
                   <li>Physics (9-1) – 0972</li>
-                </ul>
-              </ul>
-              <ul className="flex-list">
-                <li className="list-header">Business Studies</li>
-                <ul className="list-inner">
-                  <li>Business Studies - 0450</li>
-                  <li>Business Studies (9-1) – 0986</li>
                 </ul>
               </ul>
               <ul className="flex-list fl-span">
