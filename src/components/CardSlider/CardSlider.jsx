@@ -55,6 +55,15 @@ const CardSlider = () => {
     centerPadding: "0",
     prevArrow: <CustomPrevArrow />, // Specify your custom previous button component
     nextArrow: <CustomNextArrow />, // Specify your custom next button component
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
 
