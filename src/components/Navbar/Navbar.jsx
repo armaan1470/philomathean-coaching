@@ -90,6 +90,15 @@ function Navbar() {
     };
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (click) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [click]);
+
   return (
     <nav
     className={`navbar ${isScrolled ? "navbar-fixed" : ""} ${click ? "navbar-fixed":""}`}
@@ -102,7 +111,17 @@ function Navbar() {
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
+        {/* Backdrop for mobile menu */}
+        <div className={click ? "nav-backdrop active" : "nav-backdrop"} onClick={closeMobileMenu}></div>
+        
         <ul className={click ? "nav-menu active" : "nav-menu"}>
+          {/* Mobile Menu Header with Logo and Close Button */}
+          <li className="nav-item mobile-header">
+             <img src={logo} alt="Philomathean" className="mobile-logo" />
+             <div className="mobile-close-icon" onClick={closeMobileMenu}>
+                <i className="fas fa-times"></i>
+             </div>
+          </li>
           <li className="nav-item">
             <NavLink
               to="/about-us"
@@ -380,7 +399,6 @@ function Navbar() {
                   ? "sub-nav-active"
                   : ""
               }`}
-              onClick={closeMobileMenu}
             >
               Career Counselling
               <i

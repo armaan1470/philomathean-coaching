@@ -13,6 +13,62 @@
   margin: auto;
   /* margin: clamp(30px, 6vw, 7rem) 0 0 0 ; */
 }
+
+@media screen and (max-width: 768px) {
+  .counter-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 0;
+  }
+
+  .counter-div .n1 {
+    width: auto;
+    padding: 1.5rem 0.5rem;
+    border: none;
+    /* Reset standard borders */
+    position: relative;
+  }
+
+  /* Borders for 2x2 Grid */
+  /* Add bottom border to the first two items */
+  .counter-div .n1:nth-child(-n+2) {
+    border-bottom: 1px solid #c9ced9;
+  }
+
+  /* Add right border to odd items (1st and 3rd) */
+  .counter-div .n1:nth-child(odd) {
+    border-right: 1px solid #c9ced9;
+  }
+
+  /* Hide original vertical dividers */
+  .n1:not(:last-child)::before {
+    display: none;
+  }
+
+  /* Reduce Font Sizes Drastically (60% reduction requested) */
+  .counter-div p:first-child {
+    font-size: 0.8rem;
+    line-height: 1;
+    /* Ensure tight line height */
+    margin-bottom: 2px;
+  }
+
+  .n1:is(.lp1, .lp2, .lp3, .lp4) p:first-child::after {
+    font-size: 0.6rem;
+    top: -2px;
+    right: -5px;
+    position: relative;
+    vertical-align: top;
+  }
+
+  .counter-div p:last-child {
+    font-size: 0.6rem;
+    margin-top: 2px;
+    line-height: 1.2;
+  }
+}
+
 .counter-div .n1 {
   padding: 1.7rem;
   display: flex;
@@ -23,6 +79,7 @@
   position: relative;
   /* border:1px solid; */
 }
+
 .n1:not(:last-child)::before {
   content: "";
   width: 1px;
@@ -31,6 +88,7 @@
   position: absolute;
   right: 0;
 }
+
 .counter-div p:first-child {
   font-family: "articulat_cfdemi_bold";
   font-size: 5rem;
@@ -50,12 +108,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .lp3 p:first-child {
   background-color: #056bce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .lp4 p:first-child {
   background-color: #056bce;
   background-clip: text;
@@ -70,19 +130,92 @@
   top: -10px;
   -webkit-text-fill-color: #ff7b00;
 }
+
 .n1:is(.lp2) p:first-child::after {
   -webkit-text-fill-color: #ff7b00;
 }
+
 .n1:is(.lp3) p:first-child::after {
   -webkit-text-fill-color: #ff7b00;
 }
+
 .n1:is(.lp4) p:first-child::after {
   -webkit-text-fill-color: #ff7b00;
 }
-.counter-div p:last-child {
-  color: #056bce;
-  font-family: "biennalemedium";
-  font-size: 1.1rem;
+
+/* Mobile Counter Styles (Fresh Remake) */
+.counter-div-mobile {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Ensures borders/radius clip correctly */
+  position: relative;
+  top: -20px;
+  /* Slight overlap or adjustment */
 }
 
+.mobile-counter-item {
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
 
+/* Remove right border for even items (2nd column) */
+.mobile-counter-item:nth-child(even) {
+  border-right: none;
+}
+
+/* Remove bottom border for last row (3rd and 4th items) */
+.mobile-counter-item:nth-child(n+3) {
+  border-bottom: none;
+}
+
+.mobile-count {
+  font-family: "articulat_cfdemi_bold", sans-serif;
+  font-size: 1.8rem;
+  /* Adjusted for mobile readability */
+  line-height: 1;
+  margin-bottom: 0.5rem;
+
+  background-color: #056bce;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+/* Add the orange plus sign to the gradient text */
+.mobile-count::after {
+  content: "+";
+  font-size: 1.2rem;
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  -webkit-text-fill-color: #ff7b00;
+}
+
+.mobile-label {
+  font-family: "biennalemedium", sans-serif;
+  font-size: 0.8rem;
+  color: #056bce;
+  line-height: 1.2;
+}
+
+/* Ensure desktop counter is hidden/reset if needed, though react handles conditional rendering */
+@media screen and (max-width: 768px) {
+  .counter-div {
+    display: none !important;
+    /* Safety net */
+  }
+}

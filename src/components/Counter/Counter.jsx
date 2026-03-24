@@ -32,10 +32,45 @@ function Counter() {
     };
   }, []);
 
+  /* Logic to switch between Desktop and Mobile View */
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const lectures = Math.min(Math.round((progress / 5000) * maxValue), maxValue);
   const tutors = Math.min(Math.round((progress / 5000) * 25), 25);
   const batches = Math.min(Math.round((progress / 5000) * 96), 96);
   const students = Math.min(Math.round((progress / 5000) * 200), 200);
+
+  if (isMobile) {
+    return (
+      <div className="counter-div-mobile" ref={counterRef}>
+        <div className="mobile-counter-item">
+          <p className="mobile-count">{lectures}+</p>
+          <p className="mobile-label">Lecture Conducted</p>
+        </div>
+        <div className="mobile-counter-item">
+          <p className="mobile-count">{tutors}+</p>
+          <p className="mobile-label">Expert Tutors</p>
+        </div>
+        <div className="mobile-counter-item">
+          <p className="mobile-count">{batches}+</p>
+          <p className="mobile-label">Batches</p>
+        </div>
+        <div className="mobile-counter-item">
+          <p className="mobile-count">{students}+</p>
+          <p className="mobile-label">Emerging Students</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="counter-div" ref={counterRef}>

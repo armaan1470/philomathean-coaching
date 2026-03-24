@@ -43,20 +43,7 @@ function LandingPopup() {
   const handleClose = () => setOpen(false);
 
 
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "white", // Change bgcolor to backgroundColor
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", // Add a box shadow
-    borderRadius: "20px",
-    border: "10px solid #fff",
-    display: "flex",
-    flexDirection: "column",
-    userSelect: "none",
-    minWidth: "615px",
-  };
+  // Styles moved to CSS file
 
   const buttonContainerStyle = {
     display: "flex",
@@ -143,10 +130,9 @@ function LandingPopup() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-
       >
 
-        <Box sx={style} className="landing-popup-modal">
+        <Box className="landing-popup-box">
           <div className="close-button" onClick={handleClose}>
             ✖
           </div>
