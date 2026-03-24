@@ -1,4 +1,4 @@
-.about_us{
+.about_us {
     /* border: 2px solid black; */
     width: 100%;
     display: flex;
@@ -8,11 +8,11 @@
     /* padding-top: 85px; */
 }
 
-.banner.b13{
-    background-image:url("../../assets//images/About us banner.jpg")
+.banner.b13 {
+    background-image: url("../../assets//images/About us banner.jpg")
 }
 
-.about_us_hero{
+.about_us_hero {
     /* border: 1px solid black; */
     width: 1050px;
     padding: 6.25rem 0;
@@ -22,29 +22,29 @@
     align-items: center;
 }
 
-.hero_img{
+.hero_img {
     width: 95vw;
     max-width: 1000px;
 }
 
-.illustration4{
+.illustration4 {
     width: 100%;
     padding-bottom: 2.5rem;
 }
 
-.hero_text{
+.hero_text {
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     width: 90vw;
     max-width: 1000px;
-    font-family:var(--font-secondary);
+    font-family: var(--font-secondary);
     font-weight: 500;
 
 
 }
 
-.hero_text_heading{
+.hero_text_heading {
     text-align: center;
     font-size: var(--para-h);
     line-height: var(--detail-lh3);
@@ -52,11 +52,11 @@
 }
 
 
-.hero_text_heading span{
-   color:#ff7b00;
+.hero_text_heading span {
+    color: #ff7b00;
 }
-  
-  /* .hero_text_heading span:last-child::before {
+
+/* .hero_text_heading span:last-child::before {
     content: '';
     position: absolute;
     bottom: 8px;
@@ -95,7 +95,7 @@
 } */
 
 
-.hero_subtext{
+.hero_subtext {
     text-align: justify;
     margin: 10px 0;
     font-family: var(--font-primary);
@@ -105,7 +105,7 @@
     flex-wrap: wrap;
 }
 
-.two_items_container{
+.two_items_container {
     /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
@@ -114,22 +114,22 @@
     align-items: space-between;
 }
 
-.two_items_container img:first-child{
+.two_items_container img:first-child {
     padding-right: 20px;
     padding-bottom: 16px;
 
 }
 
-.two_items_container img:last-child{
+.two_items_container img:last-child {
     padding-left: 30px;
 
 }
 
 
-.about_dir_container{
+.about_dir_container {
     /* border: 1px solid black; */
     max-width: 1000px;
-    width:90vw;
+    width: 90vw;
     margin: 6.25rem 0;
     display: flex;
     flex-direction: column;
@@ -139,13 +139,13 @@
     border-radius: 30px;
 }
 
-.about_dir{
+.about_dir {
     display: flex;
     border: 4px solid transparent;
     border-radius: 30px;
-    background: 
-    linear-gradient(to right, white, white), 
-    linear-gradient(160deg, red , #fec20c); 
+    background:
+        linear-gradient(to right, white, white),
+        linear-gradient(160deg, red, #fec20c);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     width: 100%;
@@ -154,19 +154,19 @@
 }
 
 
-.director{
+.director {
     border-top-left-radius: 26px;
     border-bottom-left-radius: 26px;
     height: 580px;
-    opacity:0;
+    opacity: 0;
 }
 
-.dir_text{
+.dir_text {
     font-family: "biennalemedium";
     padding: clamp(2rem, 0.8929rem + 1.7857vw, 2.5rem);
 }
 
-.dir_heading{
+.dir_heading {
     font-style: normal;
     font-weight: 350;
     flex-wrap: nowrap;
@@ -179,23 +179,23 @@
 
 }
 
-.dir_subtext{
+.dir_subtext {
     font-size: var(--detail-medium);
     font-weight: 500;
     line-height: var(--detail-lh1);
     color: #6c6c6a;
     margin: 16px 0;
-    
+
 }
 
-.stories_background{
+.stories_background {
     background: #446AFD;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.stories_container{
+.stories_container {
     /* border: 2px solid black; */
     width: 100%;
     max-width: 1050px;
@@ -206,7 +206,7 @@
     padding: 3.5rem 0;
 }
 
-.stories_heading{
+.stories_heading {
     font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 500;
@@ -216,14 +216,13 @@
     padding-bottom: 1rem;
 }
 
-.stories_card_container{
+.stories_card_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center
-
 }
 
-.stories_cards{
+.stories_cards {
     height: 350px;
     width: 300px;
     /* border: 1px solid yellow; */
@@ -233,48 +232,50 @@
     justify-content: space-evenly;
 }
 
-.card_img{
+.card_img {
     width: 100%;
 }
 
-.stories_img{
+.stories_img {
     width: 100%;
     transition: all 0.3s ease-in-out;
-    scale:0;
+    scale: 0;
 }
 
-.stories_img:hover{
+.stories_img:hover {
     transform: scale(1.05);
 }
 
-.card_desc{
+.card_desc {
     display: flex;
     align-items: center;
 
-    
+
 }
 
 
-.avatar_img{
+.avatar_img {
     width: 20%;
     scale: 0;
 }
 
 @keyframes popup {
-    0%{
+    0% {
         scale: 0;
     }
-    100%{
+
+    100% {
         scale: 1;
     }
 }
-.card_details{
+
+.card_details {
     color: white;
     font-family: var(--font-secondary);
     padding: 0 10px;
 }
 
-.primary_text{
+.primary_text {
     font-style: normal;
     font-weight: 500;
     font-size: var(--detail-medium);
@@ -282,7 +283,7 @@
     margin: 5px 0;
 }
 
-.secondary_text{
+.secondary_text {
     font-style: normal;
     font-weight: 500;
     font-size: var(--detail-small);
@@ -290,15 +291,15 @@
 }
 
 
-.team_container{
+.team_container {
     max-width: 1050px;
-    width:95vw;
+    width: 95vw;
     padding-bottom: 9rem;
 
 }
 
-.team_heading{
-    font-family:var(--font-secondary);
+.team_heading {
+    font-family: var(--font-secondary);
     font-size: var(--content-h);
     padding: 9rem 0 2.9rem 0;
     line-height: var(--detail-lh1);
@@ -307,10 +308,11 @@
     font-weight: 600;
     position: relative;
 }
-.team_heading p{
-    margin:0 auto;
+
+.team_heading p {
+    margin: 0 auto;
     position: relative;
-    width:fit-content;
+    width: fit-content;
 }
 
 .team_heading p::after {
@@ -323,10 +325,10 @@
     height: 30px;
     top: 0px;
     left: -20px;
-  }
+}
 
-.team_heading span{
-    color:#056bce;
+.team_heading span {
+    color: #056bce;
 }
 
 .team_heading span::after {
@@ -338,11 +340,11 @@
     height: 8px;
     bottom: 0px;
     right: -10px;
-  }
-  
+}
 
 
-.team_cards_container{
+
+.team_cards_container {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -350,35 +352,37 @@
 }
 
 
-.team_cards{
+.team_cards {
     margin: 15px;
     width: 30%;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
     border: 1px solid #eef1f9;
-    
+
 }
 
-.team_cards:hover{
+.team_cards:hover {
     transform: scale(1.05);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 
-.fadein{
-    animation:fadein forwards 1s;
-    animation-delay:0.4s;
+.fadein {
+    animation: fadein forwards 1s;
+    animation-delay: 0.4s;
     transform: translateX(-200px);
-    opacity:0;
+    opacity: 0;
 }
 
-.ani1, .ani2{
+.ani1,
+.ani2 {
     opacity: 0;
 }
 
 .ani1.visible,
 .ani2.visible {
-  display: block; /* or flex */
+    display: block;
+    /* or flex */
 }
 
 .typed {
@@ -388,60 +392,79 @@
     width: 0;
     animation: typing 1s steps(30, end) forwards, blinking 0.3s;
     animation-delay: 0.5s;
-  }
+}
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100%; border-right-color: transparent }
-  }
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+        border-right-color: transparent
+    }
+}
 
 
-  @keyframes blinking {
-    0% {border-right-color: transparent}
-    50% {border-right-color: white}
-    100% {border-right-color: transparent}
-  }
-  
-  
+@keyframes blinking {
+    0% {
+        border-right-color: transparent
+    }
+
+    50% {
+        border-right-color: white
+    }
+
+    100% {
+        border-right-color: transparent
+    }
+}
+
+
 
 
 @keyframes fadein {
-    0%{
-        opacity:0;
+    0% {
+        opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
-        opacity:1
+        opacity: 1
     }
 }
 
 @keyframes hoverable {
-    0%{
-        scale:1;
+    0% {
+        scale: 1;
     }
-    50%{
-        scale:1.1;
+
+    50% {
+        scale: 1.1;
     }
-    100%{
-        scale:1;
+
+    100% {
+        scale: 1;
     }
 }
 
-@media screen and (max-width:770px){
-    .about_dir{
+@media screen and (max-width:770px) {
+    .about_dir {
         max-height: none;
     }
-    .director{
+
+    .director {
         display: none;
     }
-    .team_cards{
-        margin:10px;
-        width:35%;
+
+    .team_cards {
+        margin: 10px;
+        width: 35%;
     }
 }
 
-@media screen and (max-width:450px){
-    .illustration4{
-        padding:0;
+@media screen and (max-width:450px) {
+    .illustration4 {
+        padding: 0;
     }
 }
